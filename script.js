@@ -19,11 +19,13 @@ document.querySelector(".album1 .artist").innerHTML = nameArtist[1];
 document.querySelector(".next").addEventListener("click", () => {
   indice++;
   rederizeMusics();
+  pauseMusic()
 });
 document.querySelector(".previous").addEventListener("click", () => {
   if (indice > 0) {
     indice--;
     rederizeMusics();
+      pauseMusic()
   }
 });
 document.querySelector(".play").addEventListener("click", playMusic);
